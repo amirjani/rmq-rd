@@ -50,7 +50,7 @@ export class InventoryService {
   async bulkInsertEventAsync() {
     const ingredients = await this.ingredientService.findAll();
 
-    this.eventEmitter.emigt itAsync('BulkInsert', { ingredients });
+    this.eventEmitter.emitAsync('BulkInsert', { ingredients });
   }
 
   async bulkInsertAsync() {
