@@ -10,8 +10,6 @@ export class IngredientRepository {
   ) {}
 
   async findAll() {
-    const count = await this.ingredientCollection.countDocuments();
-
     return await this.ingredientCollection
       .find()
       .project({
